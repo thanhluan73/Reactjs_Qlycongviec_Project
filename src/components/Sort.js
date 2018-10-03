@@ -26,7 +26,7 @@ class Sort extends Component {
     					Sắp xếp <span className="fa fa-caret-square-o-down ml-5"></span>
   					</button>
 	                  <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
-	                        <li onClick = { () => this.onClick ('name', 1 )}>
+	                        <li onClick = { () => this.onClick ('name', 1 ) }>
 	                            <a 
 		                            role="button"
 		                            className={(this.props.sortBy === 'name' && 

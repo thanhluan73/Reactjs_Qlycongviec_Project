@@ -30,9 +30,9 @@ class TaskList extends Component {
     var { filterName, filterStatus } = this.state;
     var elemTasks = tasks.map((task, index) => {
         return <TaskItem 
-              key={ task.id} 
-              index={index} 
-              task={task}
+              key={ task.id } 
+              index={ index } 
+              task={ task }
               onUpdateStatus={ this.props.onUpdateStatus }
               onDelete={ this.props.onDelete }
               onUpdate={ this.props.onUpdate } 
@@ -58,7 +58,7 @@ class TaskList extends Component {
                                 type="text"
                                 className="form-control"
                                 name="filterName"
-                                value={filterName}
+                                value={ filterName }
                                 onChange={ this.onChange }
                             />
                         </td>
@@ -66,17 +66,17 @@ class TaskList extends Component {
                             <select 
                                 className="form-control"
                                 name="filterStatus" 
-                                value={filterStatus}
+                                value={ filterStatus }
                                 onChange={ this.onChange }
                             >
-                              <option value={-1}>Tất cả</option>
-                              <option value={0}>Ẩn</option>
-                              <option value={1}>Kích Hoạt</option>
+                              <option value={ -1 }>Tất cả</option>
+                              <option value={ 0 }>Ẩn</option>
+                              <option value={ 1 }>Kích Hoạt</option>
                             </select>
                         </td>
                         <td></td>
                       </tr>
-                      {elemTasks}
+                      { elemTasks }
                       
                     </tbody>
                   </table>
